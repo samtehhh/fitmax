@@ -1,0 +1,24 @@
+:root{--bg:#050505;--card:#0F0F1A;--ink:#F3F3F7;--muted:rgba(255,255,255,.62);--line:rgba(255,255,255,.10);--accent:#6E5CFF}
+*{box-sizing:border-box}html{color-scheme:dark}
+body{margin:0;background:radial-gradient(1200px 700px at 50% -200px,rgba(110,92,255,.18),transparent 60%),var(--bg);color:var(--ink);font:17px/1.65 -apple-system,BlinkMacSystemFont,"SF Pro Text",Inter,Segoe UI,Roboto,sans-serif;-webkit-font-smoothing:antialiased}
+main{max-width:46rem;margin:0 auto;padding:2.2rem 1.25rem 4rem}
+header.top{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:1rem 0 1.5rem;border-bottom:1px solid var(--line);margin-bottom:1.5rem}
+.brand{display:flex;align-items:center;gap:.6rem;font-weight:800;letter-spacing:.02em;color:var(--ink);text-decoration:none}
+.brand img{width:32px;height:32px;border-radius:9px}
+nav.docs{display:flex;flex-wrap:wrap;gap:.5rem 1rem;font-size:.92rem}
+nav.docs a{color:var(--muted);text-decoration:none}nav.docs a:hover{color:var(--ink)}
+.langs{display:flex;flex-wrap:wrap;gap:.35rem;margin:0 0 1.5rem;font-size:.82rem}
+.langs a{color:var(--muted);text-decoration:none;padding:.25rem .55rem;border:1px solid var(--line);border-radius:999px}
+.langs a[aria-current=true]{color:#fff;border-color:var(--accent);background:rgba(110,92,255,.18)}
+h1{font-size:2.1rem;line-height:1.1;letter-spacing:-.02em;margin:.2rem 0 .6rem}h2{font-size:1.25rem;margin:2rem 0 .6rem}h3{font-size:1.05rem;margin:1.4rem 0 .4rem}
+p,li{color:var(--ink)}a{color:#B9B0FF}
+.doc-updated{color:var(--muted);font-size:.9rem}
+.doc-back{display:inline-block;color:var(--muted);text-decoration:none;margin-bottom:1rem}
+.doc-figure{margin:0 0 1.5rem}.doc-figure img{width:100%;height:auto;border-radius:20px;border:1px solid var(--line)}
+.doc-figure figcaption{color:var(--muted);font-size:.85rem;margin-top:.5rem}
+table.doc-table{width:100%;border-collapse:collapse;margin:1rem 0;font-size:.92rem}
+.doc-table th,.doc-table td{text-align:start;vertical-align:top;padding:.55rem .6rem;border-bottom:1px solid var(--line)}
+.doc-table th{color:var(--muted);font-weight:600}
+code{background:rgba(255,255,255,.08);padding:.1rem .35rem;border-radius:6px;font-size:.9em}
+footer{margin-top:3rem;padding-top:1.2rem;border-top:1px solid var(--line);color:var(--muted);font-size:.85rem}
+html[dir=rtl] .doc-back{direction:rtl}
