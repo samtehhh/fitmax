@@ -24,3 +24,21 @@ App Review'da ret sebebi (Guideline 3.1.2).
 Sayfalar FitMax metin paketlerinden üretiliyor; kaynak üretici
 `scratchpad/site-render/build-site.py` (FitnessAI-Swift çalışma alanı).
 Elle düzenleme yapılacaksa doğrudan `index.html` dosyaları değiştirilebilir.
+
+**2026-09-27:** Android (Google Play) bölümleri 7 dilde gizlilik, şartlar,
+destek ve silme sayfalarına **elle** eklendi; üretici bu metni bilmiyor
+(ve artık çalışma alanında da yok). Yeniden üretim yapılırsa Android
+bölümleri kaybolur, önce üreticiye taşınmalı.
+
+## Play yayını öncesi
+
+- Play geliştirici adı sayfalarda geçmiyor (2026-09-27): Google Play
+  tarafı "Google Play'de de mevcut" / "Google Play'deki yayıncı" diye
+  anılıyor, "biz" = yüklenen sürümün yayıncısı. Play'deki geliştirici adı
+  sayfalara yazılmak istenirse 7 dilde gizlilik (giriş, Android bölümü,
+  İletişim), şartlar (kapsam, sorumluluk), silme ve destek Android
+  bölümleri elle güncellenir.
+- Play Console'da gizlilik politikası adresi `/privacy/`, veri güvenliği
+  formundaki silme adresi `/delete/`. Politika metni Data safety beyanıyla
+  (`fitmax-android/docs/PLAY_KONSOL_HAZIRLIK.md` §2.7) çelişmemeli; biri
+  değişirse öbürü aynı gün güncellenir.
